@@ -1,9 +1,9 @@
 import React from "react"
 import { useState } from "react"
-import IconFleche from '../../../assets/IconFleche.SVG'
+import IconFleche from '../../../assets/IconFleche.svg'
 import '../../../styles/Dropdown.css'
 
-function Dropdown (titre, description) {
+function Dropdown ({titre, description}) {
     const [open, setOpen] = useState(false)
 
     return(
@@ -15,10 +15,10 @@ function Dropdown (titre, description) {
                         () => setOpen(!open)}>
                     <img src= {IconFleche} alt=" icon ouvir ce contenu"/>
                 </a>
-                {
-                    open && <div className="description-dropdown"> { description} </div>
-                }
             </div>
+            {
+                    open && <div className="description-dropdown"> { description} </div>
+            }
 
         </div>
     )

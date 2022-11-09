@@ -4,8 +4,8 @@ import styled from 'styled-components'
 
 
 const HomeLogo = styled.img`
-    height: 68px;
-    width: 210px;
+    height: 50px;
+    width: 150px;
     
 `
 const StyledNav = styled.nav`
@@ -21,14 +21,14 @@ const StyledNav = styled.nav`
 `
 
 const StyledHeader = styled.header`
-    position: absolute;
-    width: 1240px;
+    margin-left: 5%; 
+    width: 100%;
     height: 68px;
-    left: 100px;
-    top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position : absolute;
+    top: 40px;
     
 `
 const StyledLink = styled(Link)`

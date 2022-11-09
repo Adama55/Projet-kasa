@@ -1,13 +1,14 @@
 import React from "react"
+import '../../../styles/Thumb.css'
 
 
 function Thumb({id, image, titre}) {
     
     return(
-        <div className="Thumb">
-            <img className="Thumb-image" src={image} alt="Thumb"/>
-            <div className="Thumb-sombre"></div>
-            <span className="Thumb-titre">{titre}</span>
+        <div className="thumb" id={id}>
+            <img className="thumb-image" src={image} alt="Thumb"/>
+            <div className="thumb-ombre"></div>
+            <span className="thumb-titre">{titre}</span>
         </div>
     )
 }
