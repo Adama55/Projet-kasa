@@ -1,10 +1,12 @@
 .card-logements {
     background-color: #f6f6f6;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 25px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     gap: 50px 60px; 
     padding: 55px 50px;
-    position: absolute;
-    top: 437PX;
 }
