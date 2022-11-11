@@ -1,10 +1,11 @@
 import React, { useState } from "react"
 import IconFleche from '../../../assets/IconFleche.png'
+import '../../../styles/ScrollCard.css'
 
-function ScrollCard (tabImages){
+function ScrollCard ({images}){
 
     let [afficherImage, changerImage] = useState(0)
-    let nombreImages = tabImages.length 
+    let nombreImages = images.length 
 
     const imageSuivant = () => {
         changerImage( afficherImage === nombreImages - 1 ? 0 : afficherImage + 1)
@@ -17,19 +18,21 @@ function ScrollCard (tabImages){
     return(
         <div className="scrollCard">
             {
-                nombreImages> 1 && <img className="IconFleche IconFleche-gauche" src={IconFleche} alt="Contenu précedént" 
+                nombreImages > 1 && <img className="iconFleche iconFleche-gauche" src={IconFleche} alt="Contenu précedént" 
                 onClick={imagePrecedente}/>
             }
             {
-                tabImages.map((image, index) => {
+                images.map((image, index) => {
+                    
                     return(
                         <img key={index} className={index === afficherImage ? 'scroll-img actif' : 'scroll-img'} 
                         src={image} alt=" logement"/>
+                        
                     )
                 })
             }
             {
-                nombreImages> 1 && <img className="IconFleche IconFleche-droite" src={IconFleche} alt="Contenu suivant" 
+                nombreImages> 1 && <img className="iconFleche iconFleche-droite" src={IconFleche} alt="Contenu suivant" 
                 onClick={imageSuivant}/>
             }
         </div>
