@@ -6,6 +6,7 @@ import Tag from '../../componentes/desktopComp/Tag'
 import Dropdown from "../../componentes/desktopComp/Dropdown"
 import EtoileVide from '../../assets/EtoileVide.png'
 import EtoileCoche from '../../assets/EtoileCoche.png'
+import '../../styles/LogementsCard.css'
 
 
 function LogementsCard () {
@@ -47,7 +48,7 @@ function LogementsCard () {
         <>
             {
                 ficheLogement ? (
-                    <div className="Fiche">
+                    <div className="fiche">
                         <ScrollCard images={ficheLogement?.pictures}/>
                         <div className="logements-propietaire">
                             <div className="information-logements">
