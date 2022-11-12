@@ -21,11 +21,6 @@
 .thumb:hover > .thumb-image {
     opacity: 0.30;
 }
-@media screen and (max-width: 500px) {
-    .thumb {
-        min-height: 255px;
-    }
-}
 
 .thumb-ombre {
     background: linear-gradient(180deg, #ffffff00 0%, #00000080 100%);
@@ -44,4 +39,9 @@
     left: 20px;
     margin-right: 20px;
     position: absolute;
+}
+@media screen and (max-width: 500px) {
+    .thumb {
+        min-height: 255px;
+    }
 }
