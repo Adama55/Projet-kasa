@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 .page-404 {
     text-align: center;
     margin-top: 10%;
+    font-family: 'Montserrat';
 }
   
 .titre-404 {
@@ -20,3 +22,17 @@
     margin-top: 150px;
     color: #ff6060;
 }
+
+@media screen and (max-width: 500px) {
+
+    .page-404{
+        margin-top: 50%;
+    }
+    .titre-404 {
+      font-size: 96px;
+    }
+    
+    .description-404 {
+      font-size: 18px;
+    }
+  }

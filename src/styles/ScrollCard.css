@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .scrollCard {
     display: block;
     height: 415px;
@@ -29,12 +31,45 @@
 }
 
 .scroll-img {
-    border-radius: 15px;
-    height: 415px;
-    object-fit: cover;
     display: none;
-    width: 100%
 }
 .scroll-img.actif {
     display: block;
+}
+
+.ima {
+    border-radius: 15px;
+    height: 415px;
+    object-fit: cover;
+    width: 100%
+}
+
+.counterImage{
+    /*color: aliceblue;*/
+    color: white;
+    position: relative;
+    top: -100px;
+    padding-left: 50%;
+}
+
+@media screen and (max-width: 500px) {
+    .scrollCard {
+        height: 255px;
+        margin: auto auto 15px auto;
+    }
+
+    .iconFleche {
+        width: 15px;
+    }
+    
+    .iconFleche-gauche {
+        margin-left: 5px;
+    }
+    .iconFleche-droite {
+        margin-right: 5px;
+    }
+
+    .ima {
+        height: 255px;
+    }
 }

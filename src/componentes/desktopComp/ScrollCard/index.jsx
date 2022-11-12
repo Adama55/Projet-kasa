@@ -25,9 +25,12 @@ function ScrollCard ({images}){
                 images.map((image, index) => {
                     
                     return(
-                        <img key={index} className={index === afficherImage ? 'scroll-img actif' : 'scroll-img'} 
-                        src={image} alt=" logement"/>
-                        
+                        <div key={index} className={index === afficherImage ? 'scroll-img actif' : 'scroll-img'} >
+                            <>
+                                <img src={image} alt=" logement" className=" ima"/>
+                                <p className="counterImage"> {index+1} / {nombreImages} </p>                            
+                            </>
+                        </div>                          
                     )
                 })
             }

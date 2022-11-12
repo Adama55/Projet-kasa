@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .banner {
     border-radius: 25px;
     height: 223px;
@@ -35,3 +37,12 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 500px) {
+    .banner-text {
+      font-size: 30px;
+      left: 9%;
+      transform: translateY(-50%);
+      width: 217px;
+    }
+  }

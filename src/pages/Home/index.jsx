@@ -9,7 +9,7 @@ import '../../styles/Home.css'
 function Home() {
     return (
         <div className="Home">
-            <Banner image={bannerHome} texte=" Chez vous partout ailleurs" />
+            <Banner image={bannerHome} texte=" Chez vous, partout ailleurs" />
 
             <div className="card-logements">
                 {

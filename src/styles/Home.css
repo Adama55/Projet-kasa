@@ -1,5 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .card-logements {
     background-color: #f6f6f6;
+    font-family: 'Montserrat';
     margin-top: 200px;
     margin-bottom: 100px;
     margin-left: 5%;
@@ -9,4 +12,18 @@
     grid-template-columns: 1fr 1fr 1fr; 
     gap: 50px 60px; 
     padding: 55px 50px;
+}
+
+@media screen  and (max-width: 500px) {
+    .Home > .banner {
+        height: 110px;
+        margin-bottom: 20px;
+    }
+
+    .card-logements {
+        background-color: unset;
+        gap: 20px 0;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
 }

@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .dropdown {
+    font-family:'Montserrat';
     border-radius: 5px;
     margin-bottom: 35px;
     text-align: left;
