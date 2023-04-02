@@ -39,6 +39,7 @@
     left: 20px;
     margin-right: 20px;
     position: absolute;
+
 }
 @media screen and (max-width: 500px) {
     .thumb {
